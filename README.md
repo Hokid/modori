@@ -54,9 +54,9 @@ Square brackets contains size information. `w` - whole number, `f` - fractional,
       * 9999: `big`
  * typography
     * font: `fnt`
-        * weight**[ i: 1-9 ]**: `wt`
-        * size**[ w: 0-3, f: .25, .5, .75 ]**: `sz`
-    * line-height**[ w: 0-24, f: .25, .5, .75 ]**: `lnh`
+        * weight **[ i: 1-9 ]**: `wt`
+        * size **[ w: 0-3, f: .25, .5, .75 ]**: `sz`
+    * line-height **[ w: 0-24, f: .25, .5, .75 ]**: `lnh`
     * text-align: `tal`
       * left: `lf`
       * center: `ct`
