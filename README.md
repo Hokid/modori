@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="343" height="176" src="https://raw.githubusercontent.com/Hokid/modori/master/static/logo.svg" alt="Mori logo">
+  <img width="343" height="176" src="https://raw.githubusercontent.com/Hokid/modori/master/static/logo.png" alt="Mori logo">
 </p>
 <p align="center">CSS helpers that help you styling on the fly🚀</p>
 
