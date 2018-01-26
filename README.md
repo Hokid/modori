@@ -13,7 +13,7 @@ npm install -S modori
 
 Helpers divided into main categories: *box*, *typography*, *utils*.
 
-Square brackets contains size information. `w` - whole number, `f` - fractional, `i` - integer. For more understanding what is whole, fractional and integer see [Generating size label](#Generating-size-label).
+Square brackets contains size information. `w` - whole number, `f` - fractional, `i` - integer. For more understanding what is whole, fractional and integer see [Generating size label](#generating-size-label).
 
  * box
     * display: `di`
@@ -114,7 +114,7 @@ For utils
  * `[prop short name]` is short name for css property.
  * `[value short name]` is short name for css text value.
  * `[utils short name]` is short name for utility.
- * `[size]` is size from base value, for example `-0-1` from 24px, see [Generating size label](#Generating-size-label).
+ * `[size]` is size from base value, for example `-0-1` from 24px, see [Generating size label](#generating-size-label).
  * `[?important]` is `imt`. Indicate than values of css properties of helper include `!important` flag.
  
 ```
