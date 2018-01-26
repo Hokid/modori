@@ -1,6 +1,6 @@
 {
   "name": "modori",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "CSS helpers that help you styling on the fly",
   "main": "css/all.css",
   "files": [
