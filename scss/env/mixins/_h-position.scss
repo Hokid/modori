@@ -1,0 +1,8 @@
+@mixin h-position($size) {
+  top: $size;
+  bottom: $size;
+}
+
+@mixin h-pos($size) {
+  @include h-position($size);
+}

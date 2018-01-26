@@ -1,0 +1,13 @@
+@import "../../env/import";
+@import "settings";
+
+@if mixin-exists("generate-helpers-advanced") {
+  @include generate-helpers-advanced(
+    $box-padding-abbr, padding-right,
+    "rt-{w}{-f}",
+    $box-padding-non-important-version,
+    $box-padding-important-version,
+    $box-padding-base, $box-padding-step, $box-padding-limit,
+    true
+  );
+}

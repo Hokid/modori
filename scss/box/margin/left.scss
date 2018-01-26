@@ -1,0 +1,13 @@
+@import "../../env/import";
+@import "settings";
+
+@if mixin-exists("generate-helpers-advanced") {
+  @include generate-helpers-advanced(
+    $box-margin-abbr, margin-left,
+    "lf-{w}{-f}",
+    $box-margin-non-important-version,
+    $box-margin-important-version,
+    $box-margin-base, $box-margin-step, $box-margin-limit,
+    true
+  );
+}

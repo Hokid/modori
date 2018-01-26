@@ -1,0 +1,13 @@
+<svg width="343" height="176" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <path stroke="#08cc9b" transform="rotate(2.3214316368103027 99.18208312988284,85.66813659667946) " id="svg_1" d="m17.56291,144.398755l95.87016,-117.461259l67.368221,88.278337l-163.23838,29.182921z" fill="#4deab0"/>
+  <path stroke="#c61959" id="svg_2" d="m257.280504,43.157538l-119.870378,13.436798l48.089591,62.233589l28.995195,9.193598l42.785592,-84.863985z" fill="#ef1f6f"/>
+  <path stroke="#9718e0" transform="rotate(-3.3592140674591064 270.35263061523415,116.83163452148503) " id="svg_3" d="m218.031886,127.6948l11.948687,32.964084l92.692845,-20.22796l-77.485422,-67.426539l-27.156109,54.690415z" fill="#b32dfc"/>
+  <text font-style="normal" font-weight="normal" stroke="#540582" transform="matrix(1.7073007822036743,0,0,1.5925925970077515,-214.66578739881516,-206.81481635570526) " xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="20" id="svg_5" y="230" x="180" fill="#640f96">Modori</text>
+  <path stroke="#32d1bb" stroke-width="0" id="svg_7" d="m138.80614,57.366251c0,0 74.529916,68.803418 74.529916,68.803418c0,0 -27.232086,-7.883727 -27.411249,-7.883727c0.179163,0 -47.118668,-60.919691 -47.118668,-60.919691z" fill="#db1360"/>
+  <path id="svg_8" d="m155.543842,74.089754" opacity="0.5" stroke-opacity="null" stroke-width="0" stroke="#32d1bb" fill="#db1360"/>
+  <path id="svg_9" d="m242.654185,75.7993c0,0 -9.768212,86.589405 -9.768212,86.589405c0,0 -13.576159,-31.622517 -13.576164,-31.622518c0.000005,0.000001 23.344376,-54.966887 23.344376,-54.966887z" stroke-opacity="null" stroke-width="0" stroke="#32d1bb" fill="#951cdb"/>
+  <path id="svg_10" d="m114.854376,14.766027" opacity="0.5" stroke-opacity="null" stroke-width="0" stroke="#32d1bb" fill="#951cdb"/>
+  <path id="svg_12" d="m16.282025,140.397326c0,0 156.558533,-30.747532 156.558533,-30.747532c0,0 6.205924,8.603667 6.205924,8.603667c0,0 -162.764457,22.143865 -162.764457,22.143865z" stroke-opacity="null" stroke-width="0" stroke="#32d1bb" fill="#3de5aa"/>
+ </g>
+</svg>

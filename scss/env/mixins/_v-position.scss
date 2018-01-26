@@ -1,0 +1,8 @@
+@mixin v-position($size) {
+  top: $size;
+  bottom: $size;
+}
+
+@mixin v-pos($size) {
+  @include v-position($size);
+}

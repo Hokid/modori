@@ -1,0 +1,5 @@
+@mixin generate-helpers($listOfHelpers) {
+  @each $helper in $listOfHelpers {
+    @include generate-helper($helper...);
+  }
+}

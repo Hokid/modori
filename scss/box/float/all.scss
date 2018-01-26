@@ -1,0 +1,12 @@
+@import "../../env/import";
+@import "settings";
+
+@if mixin-exists("generate-helpers") {
+  $list: (
+      ($box-float-base-abbr, float, lf, left, $box-float-important-version, $box-float-non-important-version),
+      ($box-float-base-abbr, float, rt, right, $box-float-important-version, $box-float-non-important-version),
+      ($box-float-base-abbr, float, none, none, $box-float-important-version, $box-float-non-important-version)
+  );
+
+  @include generate-helpers($list);
+}

@@ -1,0 +1,12 @@
+@import "../../env/import";
+@import "settings";
+
+@if mixin-exists("generate-helpers-advanced") {
+  @include generate-helpers-advanced(
+    $typography-font-abbr, font-weight,
+    "wt-{i}",
+    $typography-font-non-important-version,
+    $typography-font-important-version,
+    100, 1, 9
+  );
+}

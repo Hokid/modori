@@ -1,0 +1,24 @@
+@import "../../env/import";
+@import "settings";
+
+@if mixin-exists("generate-helpers-advanced") and mixin-exists("generate-helper") {
+  @include generate-helpers-advanced(
+      $box-z-index-abbr, z-index,
+      "{i}",
+      $box-z-index-non-important-version,
+      $box-z-index-important-version,
+      1, 1, $box-z-index-limit
+  );
+
+  @include generate-helper(
+      $box-z-index-abbr, z-index, 0, 0,
+      $box-z-index-non-important-version,
+      $box-z-index-important-version
+  );
+
+  @include generate-helper(
+      $box-z-index-abbr, z-index, big, 9999,
+      $box-z-index-non-important-version,
+      $box-z-index-important-version
+  )
+}

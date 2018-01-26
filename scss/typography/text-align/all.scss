@@ -1,0 +1,12 @@
+@import "../../env/import";
+@import "settings";
+
+@if mixin-exists("generate-helpers") {
+  $list: (
+      ($typography-text-align-base-abbr, text-align, lf, left, $typography-text-align-important-version, $typography-text-align-non-important-version),
+      ($typography-text-align-base-abbr, text-align, rt, right, $typography-text-align-important-version, $typography-text-align-non-important-version),
+      ($typography-text-align-base-abbr, text-align, ct, center, $typography-text-align-important-version, $typography-text-align-non-important-version)
+  );
+
+  @include generate-helpers($list);
+}

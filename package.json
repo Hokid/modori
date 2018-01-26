@@ -1,0 +1,46 @@
+{
+  "name": "modori",
+  "version": "0.10.0",
+  "description": "CSS helpers that help you styling on the fly",
+  "main": "css/all.css",
+  "files": [
+    "scss",
+    "css"
+  ],
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "lib",
+    "utils",
+    "helpers",
+    "styling",
+    "markup",
+    "fast",
+    "frontend"
+  ],
+  "author": "Kirill Horoshilov <mr.hokid@gmail.com> (https://github.com/Hokid)",
+  "license": "MIT",
+  "homepage": "https://github.com/Hokid/modori",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hokid/modori.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hokid/modori/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-banner": "^0.1.3",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "browserslist": [
+    "> 0.01%",
+    "not ie <= 10"
+  ]
+}

@@ -1,0 +1,8 @@
+@mixin h-padding($size) {
+  padding-left: $size;
+  padding-right: $size;
+}
+
+@mixin hpd($size) {
+  @include h-padding($size);
+}

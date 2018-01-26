@@ -1,0 +1,14 @@
+@function str-replace($str, $old, $new) {
+  $old-length: str-length($old);
+  $start-old: str-index($str, $old);
+
+  @if $start-old == null {
+    @return $str;
+  }
+
+  $end-old: $start-old + $old-length - 1;
+  $before-old: str-slice($str, 1, $start-old - 1);
+  $after-old: str-slice($str, $end-old + 1);
+
+  @return $before-old + $new + str-replace($after-old, $old, $new);
+}

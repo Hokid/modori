@@ -1,0 +1,13 @@
+@import "../../env/import";
+@import "settings";
+
+@if mixin-exists("generate-helpers") {
+  $list: (
+      ($box-position-base-abbr, position, st, static, $box-position-important-version, $box-position-non-important-version),
+      ($box-position-base-abbr, position, rl, relative, $box-position-important-version, $box-position-non-important-version),
+      ($box-position-base-abbr, position, ab, absolute, $box-position-important-version, $box-position-non-important-version),
+      ($box-position-base-abbr, position, fx, fixed, $box-position-important-version, $box-position-non-important-version),
+  );
+
+  @include generate-helpers($list);
+}

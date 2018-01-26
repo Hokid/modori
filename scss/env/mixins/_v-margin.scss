@@ -1,0 +1,8 @@
+@mixin v-margin($size) {
+  margin-top: $size;
+  margin-bottom: $size;
+}
+
+@mixin vmr($size) {
+  @include v-margin($size);
+}

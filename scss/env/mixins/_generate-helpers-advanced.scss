@@ -1,0 +1,31 @@
+@mixin generate-helpers-advanced(
+  $prop-abbr, $props, $value-abbr,
+  $non-important, $important,
+  $base, $step, $limit, $begin-from-zero: false, $template: "{s}"
+) {
+
+  $patterns: "{w}", "{f}", "{i}", "{-w}", "{-f}", "{-i}";
+  $from: if($begin-from-zero, 0, 1);
+
+  @for $i from $from through $limit {
+    $multiplicator: $step * $i;
+    $whole: floor($multiplicator);
+    $fractional: $multiplicator - $whole;
+
+    $new-value-abbr: str-replace-all(
+      $value-abbr, $patterns,
+        ($whole, // w
+          if($fractional != 0, str-slice(#{$fractional}, 3), 0), // f
+            $i, // i
+              if($whole != 0, "-" + $whole, ""), // -w
+                if($fractional != 0, "-" + str-slice(#{$fractional}, 3), ""), // -f
+                  if($i != 0, "-" + $i, "") // -i
+        )
+    );
+
+    @include generate-helper(
+      $prop-abbr, $props, $new-value-abbr,
+      ($base * $multiplicator), $non-important, $important, $template
+    );
+  }
+}

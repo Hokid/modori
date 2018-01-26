@@ -1,0 +1,8 @@
+@mixin h-margin($size) {
+  margin-left: $size;
+  margin-right: $size;
+}
+
+@mixin hmr($size) {
+  @include h-margin($size);
+}
