@@ -1,0 +1,36 @@
+@mixin g-prop-val-range(
+  $prop-short, $val-short, $props,
+  $base, $step, $limit,
+  $important: true, $contain: true,
+  $begin-from-zero: true, $template: '{s}') {
+  
+  $patterns: "{w}", "{f}", "{i}", "{.w}", "{.f}", "{.i}";
+  $from: if($begin-from-zero, 0, 1);
+
+  @for $i from $from through $limit {
+    $multiplicator: $step * $i;
+    $whole: floor($multiplicator);
+    $fractional: $multiplicator - $whole;
+    $content: ();
+
+    $new-value-abbr: str-replace-all(
+      $val-short, $patterns,
+        ($whole, // w
+          if($fractional != 0, str-slice(#{$fractional}, 3), 0), // f
+            $i, // i
+              if($whole != 0, "." + $whole, ""), // -w
+                if($fractional != 0, "." + str-slice(#{$fractional}, 3), ""), // -f
+                  if($i != 0, "." + $i, "") // -i
+        )
+    );
+
+    @each $rec in $props {
+      $content: append($content, $rec ($base * $multiplicator));
+    }
+
+    @include g-prop-val(
+      $prop-short, $new-value-abbr, $content,
+      $important, $contain, $template
+    );
+  }
+}
