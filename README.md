@@ -30,6 +30,7 @@ Square brackets contains size information. `w` - whole number, `f` - fractional,
       * right: `rt`
       * none: `none`
     * margin **[ w: 0-6, f: .25, .5, .75 ]**: `mr`
+      * shorthand
       * top: `tp`
       * left: `lf`
       * right: `rt`
@@ -38,7 +39,8 @@ Square brackets contains size information. `w` - whole number, `f` - fractional,
       * **[non standard]** horizontal margin: `ht`
       * **[non standard]** vertical gaps: `vg`
       * **[non standard]** horizontal gaps: `hg`
-    * padding: `pd`
+    * padding **[ w: 0-6, f: .25, .5, .75 ]**: `pd`
+      * shorthand
       * top: `tp`
       * left: `lf`
       * right: `rt`
@@ -61,6 +63,8 @@ Square brackets contains size information. `w` - whole number, `f` - fractional,
       * left: `lf`
       * center: `ct`
       * right: `rt`
+      * justify: `jt`
+      * inherit: `ih`
 
 # Utils
   * clearfix: `crfx`
@@ -91,6 +95,8 @@ Helper styles:
 <div class="m-crfx">clearfix</div>
 <div class="m-pos-fx">position: fixed</div>
 <div class="m-pd-vt-1">padding-top: 24px; padding-bottom: 24px;</div>
+<div class="m-pd-1">padding: 24px;</div>
+<div class="m-mr-1">margin: 24px;</div>
 ```
 
 ## Naming
