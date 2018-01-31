@@ -9,6 +9,8 @@
 npm install -S modori
 ```
 
+[Playground](https://codepen.io/Hokid/pen/wyaoBv)
+
 # Examples
 
 HTML
@@ -513,8 +515,8 @@ Sass
 @import "~modori/scss/all";
 ```
 
-Css:
-```CSS
+Webpack or another bundler:
+```JavaScript
 import 'modori/display/all.css';
 import 'modori/margin/top.css';
 import 'modori/margin/left.css';
@@ -522,6 +524,13 @@ import 'modori/margin/all.css';
 
 // or all
 import 'modori/css/all';
+```
+
+HTML:
+```HTML
+<script src="https://unpkg.com/modori@latest/css/all.css"></script>
+<script src="https://unpkg.com/modori@latest/css/typography.css"></script>
+<!--and etc-->
 ```
 
 Variables for base sizes:
