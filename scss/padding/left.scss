@@ -1,0 +1,7 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val-range(
+    $padding-shorthand, '{w}{.f}l', padding-left,
+    $padding-base, $padding-step, $padding-limit,
+    $padding-important, true, true, '{s}');

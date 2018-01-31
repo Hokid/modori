@@ -1,0 +1,8 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val($text-align-shorthand, le, text-align left, $text-align-important, false, '{s}');
+@include g-prop-val($text-align-shorthand, ri, text-align right, $text-align-important, false, '{s}');
+@include g-prop-val($text-align-shorthand, ce, text-align center, $text-align-important, false, '{s}');
+@include g-prop-val($text-align-shorthand, ju, text-align justify, $text-align-important, false, '{s}');
+@include g-prop-val($text-align-shorthand, in, text-align inherit, $text-align-important, false, '{s}');

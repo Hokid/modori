@@ -8,7 +8,7 @@ gulp.task('default', function() {
   return gulp.src('./scss/**/*.scss')
     .pipe(sass({
       outputStyle: 'expanded'
-    }))
+    }).on('error', sass.logError))
     .pipe(autoprefix({
       cascade: false
     }))

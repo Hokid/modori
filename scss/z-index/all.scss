@@ -1,0 +1,10 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val-range(
+    $z-index-shorthand, '{w}', z-index,
+    1, 1, $z-index-limit,
+    $z-index-important, true, true, '{s}');
+
+@include g-prop-val($z-index-shorthand, max, z-index 9999, $z-index-important, false, '{s}');
+@include g-prop-val($z-index-shorthand, -1, z-index -1, $z-index-important, false, '{s}');

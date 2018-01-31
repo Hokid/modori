@@ -1,0 +1,8 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val-range(
+    $font-shorthand, '{w}w', font-weight,
+    1, 100, 9,
+    $font-important, true, false, '{s}');
+

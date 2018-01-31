@@ -1,0 +1,12 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val-range(
+    $margin-shorthand, '{w}{.f}hg', margin-left,
+    $margin-base, $margin-step, $margin-limit,
+    $margin-important, true, true, '{s} > * + *');
+
+@include g-prop-val-range(
+    $margin-shorthand, '-{w}{.f}hg', margin-left,
+    -($margin-base), $margin-step, $margin-limit,
+    $margin-important, true, false, '{s} > * + *');

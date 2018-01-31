@@ -1,0 +1,8 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val($position-shorthand, st, position static, $position-important, false, '{s}');
+@include g-prop-val($position-shorthand, re, position relative, $position-important, false, '{s}');
+@include g-prop-val($position-shorthand, ab, position absolute, $position-important, false, '{s}');
+@include g-prop-val($position-shorthand, fi, position fixed, $position-important, false, '{s}');
+

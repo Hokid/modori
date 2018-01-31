@@ -1,0 +1,12 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val($display-shorthand, bl, display block, $display-important, false, '{s}');
+@include g-prop-val($display-shorthand, in, display inline, $display-important, false, '{s}');
+@include g-prop-val($display-shorthand, inbl, display inline-block, $display-important, false, '{s}');
+@include g-prop-val($display-shorthand, fl, display flex, $display-important, false, '{s}');
+@include g-prop-val($display-shorthand, ta, display table, $display-important, false, '{s}');
+@include g-prop-val($display-shorthand, tar, display table-row, $display-important, false, '{s}');
+@include g-prop-val($display-shorthand, tac, display table-cell, $display-important, false, '{s}');
+@include g-prop-val($display-shorthand, none, display none, $display-important, false, '{s}');
+

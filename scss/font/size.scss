@@ -1,0 +1,9 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val-range(
+    $font-shorthand, '{w}{.f}s', font-size,
+    $font-base, $font-step, $font-limit,
+    $font-important, true, true, '{s}');
+
+@include g-prop-val($font-shorthand, in, font-size inherit, $font-important, false, '{s}');
