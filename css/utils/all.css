@@ -1,1 +1,1 @@
-.m-crfx:after,.m-crfx:before{content:" ";display:table}.m-crfx:after{clear:both}
+[m-utils~=crfx]:after,[m-utils~=crfx]:before{content:" ";display:table}[m-utils~=crfx]:after{clear:both}

@@ -1,0 +1,7 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val($float-shorthand, le, float left, $float-important, false, '{s}');
+@include g-prop-val($float-shorthand, ri, float right, $float-important, false, '{s}');
+@include g-prop-val($float-shorthand, none, float none, $float-important, false, '{s}');
+

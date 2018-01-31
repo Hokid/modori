@@ -1,0 +1,10 @@
+@import "../env/import";
+@import "settings";
+
+@include g-prop-val-range(
+    $line-height-shorthand, '{w}{.f}', line-height,
+    $line-height-base, $line-height-step, $line-height-limit,
+    $line-height-important, true, true, '{s}');
+
+@include g-prop-val($line-height-shorthand, nr, line-height normal, $line-height-important, false, '{s}');
+@include g-prop-val($line-height-shorthand, in, line-height inherit, $line-height-important, false, '{s}');

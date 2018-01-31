@@ -1,0 +1,33 @@
+@mixin g-prop-val($prop-short, $val-short, $content, $important: true, $contain: false, $template: '{s}') {
+
+  $patterns: '{s}';
+
+  $attr-name: unquote($ns) + '-' + unquote($prop-short);
+  $cond: if($contain, '~=', '=');
+  $s-start: $attr-name + unquote($cond) + '"';
+  $s-end: ('"');
+  $content: if(length(nth($content, 1)) == 1, append((), $content), $content);
+
+  $selector: '[' + $s-start + $val-short + $s-end + ']';
+  $selector: str-replace-all($template, $patterns, $selector);
+
+  //@debug
+  //  'Selector: ' + $selector;
+
+  #{$selector} {
+    @each $rec in $content {
+      #{nth($rec, 1)}: #{nth($rec, 2)};
+    }
+  }
+
+  @if $important {
+    $selector: '[' + $s-start + $val-short + '!' + $s-end + ']';
+    $selector: str-replace-all($template, $patterns, $selector);
+
+    #{$selector} {
+      @each $rec in $content {
+        #{nth($rec, 1)}: #{nth($rec, 2)} !important;
+      }
+    }
+  }
+}
