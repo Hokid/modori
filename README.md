@@ -5,7 +5,7 @@
 
 # Installing
 
-```
+```bash
 npm install -S modori
 ```
 
@@ -492,7 +492,7 @@ No need description.
 Some helpers have `_settings.scss` file that contain sets of variable for customization generation of it.
 
 For example
-```
+```SCSS
 $margin-base: 24px !dafault; // base for value
 $margin-step: 1 / 4 !dafault; // step
 $margin-limit: 24 !dafault; // limit of generations
@@ -502,7 +502,7 @@ $margin-import: true !dafault; // whether generate helper with !important
 You may choose what to include into your project.
 
 Sass
-```
+```SCSS
 @import "~modori/scss/display/all";
 @import "~modori/scss/margin/top";
 @import "~modori/scss/box.sccs";
@@ -514,7 +514,7 @@ Sass
 ```
 
 Css:
-```
+```CSS
 import 'modori/display/all.css';
 import 'modori/margin/top.css';
 import 'modori/margin/left.css';
@@ -525,7 +525,7 @@ import 'modori/css/all';
 ```
 
 Variables for base sizes:
-```
+```SCSS
 $base-font-size: 16px !default; // for font-size
 $base-size: 24px !default; // for margins, padding etc
 ```
